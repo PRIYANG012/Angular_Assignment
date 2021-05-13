@@ -1,0 +1,32 @@
+
+ <div class="container">
+     <div class="row">
+         <div class="col-lg-12 text-center">
+     
+          <h3>Q1. Find the missing number in the series:
+            2,3,10,15,26,35,50,63,?</h3>
+ <div class="form">
+    <h2 class="form-header">Series Nth Finder</h2>
+    <form [formGroup]="SeriesForm" class="form-container" (ngSubmit)="onSubmit()">
+  
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.index.errors }">
+        <input type="number" placeholder="index" formControlName="index">
+      </p>
+  
+      <div *ngIf="isSubmitted && formControls.index.errors" class="help-block">
+        <div *ngIf="formControls.index.errors.required">index is required</div>
+      </div>
+  
+     
+  
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+    <div>{{this.numberAtIndex}}</div>
+  </div>
+  
+          
+</div>
+</div>
+</div>

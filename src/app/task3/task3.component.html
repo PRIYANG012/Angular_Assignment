@@ -1,0 +1,25 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-lg-12 text-center mt-5">
+            <h2>Task 3</h2>
+
+            <form [formGroup]="phoneNumberForm" (ngSubmit)="send(phoneNumberForm.value)">
+               
+                <div *ngFor="let phone of getPhoneNumbersFormControls(); let i = index">
+                  <label class="p-1">PhoneNumber {{i}}: </label>    
+                  <input class="p-1 m-2" [formControl]="phone" type="text">
+                <button class="btn btn-danger" *ngIf="remove" (click)="removePhone(i)">Remove Phone</button>    
+                </div>
+                <br>  
+                <button class="btn btn-success" (click)="addPhone()">Add new phone</button>
+                <br>
+                <br>  
+                <input  class="btn btn-primary" type="submit">
+              </form>
+                <br>  
+            
+              {{ phoneNumberForm.value | json}}
+        </div>
+    </div>
+</div>

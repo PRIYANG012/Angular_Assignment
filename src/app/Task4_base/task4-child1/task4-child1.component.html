@@ -1,0 +1,21 @@
+
+<div class="card mb-3">
+    <h5 class="card-header">Top left</h5>
+
+    <form [formGroup]="InputForm" class="form-container" (ngSubmit)="sendMessage()">
+
+        <p>
+            <input type="text" placeholder="msg" Name="msg" formControlName="msg">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+
+    <div class="card-body text-center">
+
+        <div class="alert alert-sm alert-info">{{messages}}</div>
+
+    </div>
+</div>
