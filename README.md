@@ -1,5 +1,18 @@
 # InternshipAssignment
 
+Task1: Series nth index value
+http://localhost:4200/Task1
+
+Task2: Dynamic Components
+http://localhost:4200/Task2
+
+Task3: Dynamic Form Fields
+http://localhost:4200/Task3
+
+Task4: Communication between Components
+http://localhost:4200/Task4
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
